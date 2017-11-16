@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	
+	<package name="mypackage" extends="struts-default">
+
+		<action name="getUserList" class="userAction" method="getUserList">
+			<result name="success">WEB-INF/page/userList.jsp</result>
+		</action>
+		<action name="addUser" class="userAction" method="addUser">
+			<result name="success" type="redirectAction">getUserList</result>
+		</action>
+		<action name="deleteUser" class="userAction" method="deleteUser">
+			<result name="success" type="redirectAction">getUserList</result>
+		</action>
+		<action name="toEditUser" class="userAction" method="toEditUser">
+			<result name="success">/WEB-INF/page/editUser.jsp</result>
+		</action>
+		<action name="editUser" class="userAction" method="editUser">
+			<result name="success" type="redirectAction">getUserList</result>
+		</action>
+		<action name="queryFromUser" class="userAction" method="queryFromUser">
+			<result name="success">/WEB-INF/page/userList.jsp</result>
+		</action>
+		
+		<!-- 統配跳轉 -->
+		<action name="page_*_*">
+			<result>WEB-INF/{1}/{2}.jsp</result>
+		</action>
+		
+
+	</package>
+	
+	<package name="mypackage2" extends="json-default">
+		<action name="getGenderRate" class="userAction" method="getGenderRate">
+			<result name="success" type="json">
+				<param name="root">
+					dataMap
+				</param>
+			</result>
+		</action>
+		<action name="getAmmountByDate" class="userAction" method="getAmmountByDate">
+			<result name="success" type="json">
+				<param name="root">
+					dataMap
+				</param>
+			</result>
+		</action>
+	</package>
+
+
+</struts>

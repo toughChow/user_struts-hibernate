@@ -1,0 +1,171 @@
+	body {
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.panel {
+	    margin: 0 auto;
+	}
+
+	header {
+	    /*width: 1100px;*/
+	    height: 100px;
+	    margin-left:-130px;
+	    background-color: #4D98C1;
+	}
+
+	#div-logo-img {
+	    float: left;
+	    height: 100px;
+	}
+
+	header img {
+	    margin-left: 20px;
+	    margin-top: 5px;
+	    width: 120px;
+	    height: 80px;
+	    left: 150px;
+	    top: 5px;
+	}
+
+	header div,
+	header a,
+	h2 {
+	    margin: 0px;
+	    line-height: 100px;
+	}
+
+	header h2 {
+	    float: left;
+	    font-size: 2em;
+	    color: white;
+	}
+
+	#div-help-quit {
+	    height: 100px;
+	    float: right;
+	    margin-right: 30px;
+	}
+
+	header a {
+	    padding-right: 20px;
+	    font-size: 1.2em;
+	    color: white;
+	    text-decoration: none;
+	}
+
+	.form-title {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.myList-query{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	
+
+	content {
+	    /*width: 1100px;*/
+	    /*float: left;*/
+	}
+
+	.left {
+	    width: 180px;
+	    float: left;
+	    margin-left:-130px;
+	    padding-right:20px;
+	    background-color: #EFF0EF;
+	}
+
+	.left .selection {
+	    height: 40px;
+	    text-align: center;
+	    padding-top: 10px;
+	    border-bottom: 1px solid gray;
+	}
+
+	.left a {
+	    text-decoration: none;
+	    color: black;
+	    font-size: 1.2em;
+	    margin-top: 10px;
+	}
+
+
+	.img-button {
+	    margin-top: 185px;
+	    margin-left: 11px;
+	}
+
+	.right {
+	    /*width: 920px;*/
+	    /*float: left;*/
+	    margin-left:100px;
+	}
+
+	.form-title {
+	    text-align: center;
+	    font-size: 1.3em;
+	}
+
+	.myForm {
+	    /*width: 850px;*/
+	    margin-left: 35px;
+	}
+
+	.myForm div {
+	    margin-bottom: 30px;
+	}
+
+	.myForm-msg input {
+	    width: 500px;
+	    height: 25px;
+	    box-shadow: 0;
+	}
+
+	.myForm-btn {
+	    text-align: center;
+	}
+
+	.myForm-btn input {
+	    width: 80px;
+	    height: 30px;
+	    margin-left: 30px;
+	}
+
+	.myList-query {
+	    margin-left: 35px;
+	}
+
+	.myList-query button {
+	    width: 80px;
+	    height: 30px;
+	    margin-left: 10px;
+	}
+
+	.myList-query input {
+	    height: 23px;
+	}
+
+	.myList-table {
+	    width: 850px;
+	    margin-left: 35px;
+	    border-left: 1px solid #F3F3F3;
+	    border-top: 1px solid #F3F3F3;
+	}
+
+	.myList-table thead {
+	    background-color: #f0f0f0;
+	}
+
+	.myList-table td {
+	    height: 30px;
+	    border-right: 1px solid #F3F3F3;
+	    border-bottom: 1px solid #F3F3F3;
+	}
+
+	.myList-table tbody a {
+	    text-decoration: none;
+	}
